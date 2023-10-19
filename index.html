@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Bootstrap 4 Form Example</title>
+<meta name="description" content>
+<meta name="author" content>
+
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="img/favicons/manifest.json">
+<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+<style id="" media="all">/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/lato/v24/S6u8w4BMUTPHjxsAUi-qJCY.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/lato/v24/S6u8w4BMUTPHjxsAXC-q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/lato/v24/S6u_w4BMUTPHjxsI5wq_FQft1dw.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/lato/v24/S6u_w4BMUTPHjxsI5wq_Gwft.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh6UVSwaPGR_p.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+
+<link href="css/form.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<div class="row justify-content-md-center">
+<div class="col-md-8 card p-5 m-5 shadow-lg">
+<h1>Form Example</h1>
+
+
+<form data-toggle="validator">
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+<label for="first" class="font-weight-bold">First Name</label>
+<input type="text" class="form-control" id="first" placeholder>
+</div>
+<div class="form-group">
+<label for="website" class="font-weight-bold">Website</label>
+<input type="url" class="form-control" id="website" placeholder="http://">
+</div>
+<div class="form-group">
+<label for="email" class="font-weight-bold">Email address</label>
+<input type="email" class="form-control" id="email" aria-describedby="email-help" placeholder="Enter email" data-error="This field is required" required>
+<small id="email-help" class="form-text text-muted">No Spam.</small>
+<div class="form-control-feedback help-block with-errors has-danger"></div>
+</div>
+</div>
+
+<div class="col-sm-6">
+<div class="form-group">
+<label for="last" class="font-weight-bold">Last Name</label>
+<input type="text" class="form-control" id="last" placeholder>
+</div>
+<div class="form-group">
+<label for="phone" class="font-weight-bold">Phone</label>
+<input type="phone" class="form-control" id="phone" placeholder>
+</div>
+<fieldset class="form-group">
+<p class="font-weight-bold">Best time to call you?</p>
+<div class="custom-control custom-radio">
+<input type="radio" id="Morning" name="TimeContact" class="custom-control-input" checked>
+<label class="custom-control-label" for="Morning">Morning</label>
+</div>
+<div class="custom-control custom-radio">
+<input type="radio" id="Afternoon" name="TimeContact" class="custom-control-input">
+<label class="custom-control-label" for="Afternoon">Afternoon</label>
+</div>
+</fieldset>
+</div>
+
+</div>
+
+<div class="form-group">
+<label for="project" class="font-weight-bold">Please explain your project</label>
+<textarea class="form-control" id="project" rows="3"></textarea>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+<label for="budget" class="font-weight-bold">What is your budget range?</label>
+<select class="custom-select w-100" id="budget">
+<option selected>Choose</option>
+<option value="500-1000">$500 - $1000</option>
+<option value="1000-2000">$1000 - $2000</option>
+<option value="2000-5000">$2000 - $5000</option>
+<option value="5000+">$5000+</option>
+</select>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label for="timeline" class="font-weight-bold">What is your timeline?</label>
+<select class="custom-select w-100" id="timeline">
+<option selected>Choose</option>
+<option value="2 weeks">2 weeks</option>
+<option value="1 month">1 month</option>
+<option value="2-3 months">2 - 3 months</option>
+</select>
+</div>
+</div>
+</div>
+<fieldset class="form-group">
+<legend>Do you need help with the following?</legend>
+<div class="row">
+<div class="col-sm-6">
+<div class="custom-controls-stacked">
+<div class="custom-control custom-checkbox">
+<input type="checkbox" class="custom-control-input" id="LogoDesignBranding">
+<label class="custom-control-label" for="LogoDesignBranding">Logo Design and Branding</label>
+</div>
+<div class="custom-control custom-checkbox">
+<input type="checkbox" class="custom-control-input" id="WritingCopy">
+<label class="custom-control-label" for="WritingCopy">Writing Copy</label>
+</div>
+<div class="custom-control custom-checkbox">
+<input type="checkbox" class="custom-control-input" id="Photography">
+<label class="custom-control-label" for="Photography">Photography</label>
+</div>
+</div>
+
+</div>
+
+<div class="col-sm-6">
+<div class="custom-controls-stacked">
+<div class="custom-control custom-checkbox">
+<input type="checkbox" class="custom-control-input" id="Hosting">
+<label class="custom-control-label" for="Hosting">Website Hosting</label>
+</div>
+<div class="custom-control custom-checkbox">
+<input type="checkbox" class="custom-control-input" id="PPC">
+<label class="custom-control-label" for="PPC">PPC Advertising (AdWords)</label>
+</div>
+<div class="custom-control custom-checkbox">
+<input type="checkbox" class="custom-control-input" id="NotSure">
+<label class="custom-control-label" for="NotSure">Not sure, help me choose</label>
+</div>
+</div>
+
+</div>
+
+</div>
+</fieldset>
+<div class="form-group">
+<p class="font-weight-bold">Attach your RFP or NDA <small>if applicable</small></p>
+<div class="custom-file">
+<input type="file" class="custom-file-input" id="customFile">
+<label class="custom-file-label" for="customFile">Choose file</label>
+</div>
+<small id="fileHelp" class="form-text text-muted">.zip for multiple files</small>
+</div>
+<div class="form-group">
+<span class="font-weight-bold">Would you like to receive our newsletter?</span>
+<div class="custom-control custom-switch">
+<input type="checkbox" class="custom-control-input" id="newsletter" checked>
+<label class="custom-control-label" for="newsletter">Receive newsletter</label>
+</div>
+</div>
+<button type="submit" class="btn btn-primary">Send Form</button>
+</form>
+</div>
+
+</div>
+
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.slim.min.js"><\/script>')
+    </script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="js/form.js"></script>
+
+<script type="text/javascript">
+      function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      // Your scripts would go inside this defer.js
+      // Use case would be "enhancements" like animations, share buttons, etc.
+      element.src = "js/defer.js";
+      document.body.appendChild(element);
+      }
+      if (window.addEventListener)
+      window.addEventListener("load", downloadJSAtOnload, false);
+      else if (window.attachEvent)
+      window.attachEvent("onload", downloadJSAtOnload);
+      else window.onload = downloadJSAtOnload;
+    </script>
+
+</body>
+</html>
